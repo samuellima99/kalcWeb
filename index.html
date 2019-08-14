@@ -17,28 +17,28 @@
 <body>
 
     <div class="calculator">
-        <div class="screen"></div>
+        <div class="screen">0</div>
         <div class="buttons">
             <div class="numbers">
-                <button data-val="9" onclick="capturaValor(innerText)">9</button>
-                <button data-val="8" onclick="capturaValor(innerText)">8</button>
-                <button data-val="7" onclick="capturaValor(innerText)">7</button>
-                <button data-val="6" onclick="capturaValor(innerText)">6</button>
-                <button data-val="5" onclick="capturaValor(innerText)">5</button>
-                <button data-val="4" onclick="capturaValor(innerText)">4</button>
-                <button data-val="3" onclick="capturaValor(innerText)">3</button>
-                <button data-val="2" onclick="capturaValor(innerText)">2</button>
-                <button data-val="1" onclick="capturaValor(innerText)">1</button>
+                <button data-val="9" onclick="capturaValor(this.innerText)">9</button>
+                <button data-val="8" onclick="capturaValor(this.innerText)">8</button>
+                <button data-val="7" onclick="capturaValor(this.innerText)">7</button>
+                <button data-val="6" onclick="capturaValor(this.innerText)">6</button>
+                <button data-val="5" onclick="capturaValor(this.innerText)">5</button>
+                <button data-val="4" onclick="capturaValor(this.innerText)">4</button>
+                <button data-val="3" onclick="capturaValor(this.innerText)">3</button>
+                <button data-val="2" onclick="capturaValor(this.innerText)">2</button>
+                <button data-val="1" onclick="capturaValor(this.innerText)">1</button>
                 <button data-val="clear"onclick="limpaTela()">C</button>
-                <button data-val=".">.</button>
-                <button data-val="0" href="0" onclick="capturaValor(innerText)">0</button>
+                <button data-val="." onclick="capturaValor(this.innerText)">.</button>
+                <button data-val="0" onclick="capturaValor(this.innerText)">0</button>
             </div>
             <div class="operators">
-                <button data-val="÷" onclick="capturaOperador(innerText)">÷</button>
-                <button data-val="x" onclick="capturaOperador(innerText)">x</button>
-                <button data-val="-" onclick="capturaOperador(innerText)">-</button>
-                <button data-val="+" onclick="capturaOperador(innerText)">+</button>
-                <button data-val="=" onclick="capturaOperador(innerText)">=</button>
+                <button data-val="÷" onclick="capturaOperador(this.innerText)">÷</button>
+                <button data-val="x" onclick="capturaOperador(this.innerText)">x</button>
+                <button data-val="-" onclick="capturaOperador(this.innerText)">-</button>
+                <button data-val="+" onclick="capturaOperador(this.innerText)">+</button>
+                <button data-val="=" onclick="igual()">=</button>
             </div>
         </div>
     </div>
